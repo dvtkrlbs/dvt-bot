@@ -1,5 +1,5 @@
 [package]
-name = "sere-dc"
+name = "dvt-bot"
 version = "0.1.0"
 authors = ["Tunahan Karlibas <dvt.tnhn.krlbs@gmail.com>"]
 edition = "2018"

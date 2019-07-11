@@ -1,5 +1,5 @@
 use kankyo;
-use sere_dc::core::framework::DvtFramework;
+use dvt_bot::core::framework::DvtFramework;
 use serenity::client::Client;
 use serenity::framework::standard::{
     macros::{command, group},
