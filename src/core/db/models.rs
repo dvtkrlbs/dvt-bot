@@ -14,6 +14,8 @@ pub struct Guild {
     pub logging: Vec<String>,
     pub disabled_commands: Vec<String>,
     pub ignored_channels: Vec<i64>,
+    pub mod_roles: Vec<i64>,
+    pub admin_roles: Vec<i64>
 }
 
 #[derive(Insertable)]

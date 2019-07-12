@@ -1,4 +1,3 @@
-#![feature(result_map_or_else)]
 use serenity::framework::standard::{
     macros::{command, group},
     Args, CommandResult,
@@ -39,3 +38,5 @@ fn ping(ctx: &mut Context, msg: &Message) -> CommandResult {
 
     Ok(())
 }
+
+

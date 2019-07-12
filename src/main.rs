@@ -1,24 +1,16 @@
-use kankyo;
 use dvt_bot::core::framework::DvtFramework;
+use dvt_bot::Handler;
+use kankyo;
 use serenity::client::Client;
-use serenity::framework::standard::{
-    macros::{command, group},
-    Args, CommandResult, StandardFramework,
-};
-use serenity::model::{channel::Message, id::UserId};
-use serenity::prelude::{Context, EventHandler};
-use serenity::utils::parse_username;
+
 
 use std::env;
 
-struct Handler;
-
-impl EventHandler for Handler {}
 
 fn main() {
-    kankyo::init();
+    kankyo::init().ok();
     // Login with a bot token from the environment
-    let mut client = Client::new(&env::var("DISCORD_TOKEN").expect("token").as_str(), Handler)
+    let mut client = Client::new(&env::var("DISCORD_TOKEN").expect("token").as_str(), Handler{})
         .expect("Error creating client");
     client.with_framework(DvtFramework::new());
 

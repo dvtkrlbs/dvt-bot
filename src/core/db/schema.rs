@@ -11,5 +11,7 @@ table! {
         logging -> Array<Text>,
         disabled_commands -> Array<Text>,
         ignored_channels -> Array<Int8>,
+        mod_roles -> Array<Int8>,
+        admin_roles -> Array<Int8>,
     }
 }

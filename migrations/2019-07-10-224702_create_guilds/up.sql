@@ -9,5 +9,7 @@ CREATE TABLE guilds (
                         prefix TEXT NOT NULL DEFAULT 'm!',
                         logging TEXT [] NOT NULL DEFAULT array[]::text[],
                         disabled_commands TEXT [] NOT NULL DEFAULT array[]::text[],
-                        ignored_channels BIGINT [] NOT NULL DEFAULT array[]::bigint[]
+                        ignored_channels BIGINT [] NOT NULL DEFAULT array[]::bigint[],
+                        mod_roles BIGINT [] NOT NULL DEFAULT array[]::bigint[],
+                        admin_roles BIGINT [] NOT NULL DEFAULT array[]::bigint[]
 )

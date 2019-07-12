@@ -3,9 +3,9 @@ mod schema;
 
 use self::models::*;
 use self::schema::*;
-use chrono::offset::Utc;
+//use chrono::offset::Utc;
 use diesel;
-use diesel::pg::upsert::excluded;
+//use diesel::pg::upsert::excluded;
 use diesel::pg::PgConnection;
 use diesel::prelude::*;
 use diesel::r2d2::{ConnectionManager, Pool, PooledConnection};
